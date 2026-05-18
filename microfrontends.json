@@ -1,0 +1,19 @@
+{
+  "applications": {
+    "poseidon": {
+      "routing": [{ "group": "poseidon", "path": "/poseidon" }]
+    },
+    "fest": {
+      "routing": [{ "group": "fest", "path": "/fest" }]
+    },
+    "crew": {
+      "routing": [{ "group": "crew", "path": "/crew" }]
+    },
+    "systems": {
+      "routing": [{ "group": "systems", "path": "/systems" }]
+    },
+    "calculadoras": {
+      "routing": [{ "group": "calculadoras", "path": "/calculadoras" }]
+    }
+  }
+}
