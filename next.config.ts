@@ -1,12 +1,21 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Isso força o Next a padronizar as barras no final das URLs e ajuda o rewrite a casar
-  trailingSlash: false, 
-
+  // 1. Remove aquela linha do trailingSlash (deixa o Next padrão controlar)
+  
   async rewrites() {
     return [
-      // REGRA PARA O FEST (Dizendo explicitamente como lidar com a raiz do fest)
+      // CREW (O segredo é usar a rota com opcional :path*)
+      {
+        source: "/crew",
+        destination: "https://arxum-crew.vercel.app/crew",
+      },
+      {
+        source: "/crew/:path*",
+        destination: "https://arxum-crew.vercel.app/crew/:path*",
+      },
+
+      // FEST
       {
         source: "/fest",
         destination: "https://arxum-fest.vercel.app/fest",
@@ -16,7 +25,7 @@ const nextConfig: NextConfig = {
         destination: "https://arxum-fest.vercel.app/fest/:path*",
       },
 
-      // REGRA PARA O CALCULADORAS
+      // CALCULADORAS
       {
         source: "/calculadoras",
         destination: "https://arxum-calculadoras.vercel.app/calculadoras",
@@ -26,14 +35,20 @@ const nextConfig: NextConfig = {
         destination: "https://arxum-calculadoras.vercel.app/calculadoras/:path*",
       },
 
-      // Mantém os outros iguais, mas adicionando a linha limpa para cada um se quiser blindar:
+      // SUITE
+      {
+        source: "/suite",
+        destination: "https://arxum-suite.vercel.app/suite",
+      },
       {
         source: "/suite/:path*",
         destination: "https://arxum-suite.vercel.app/suite/:path*",
       },
+
+      // POSEIDON
       {
-        source: "/crew/:path*",
-        destination: "https://arxum-crew.vercel.app/crew/:path*",
+        source: "/poseidon",
+        destination: "https://arxum-poseidon.vercel.app/poseidon",
       },
       {
         source: "/poseidon/:path*",
