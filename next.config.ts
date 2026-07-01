@@ -1,11 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // 1. Remove aquela linha do trailingSlash (deixa o Next padrão controlar)
-  
   async rewrites() {
     return [
-      // CREW (O segredo é usar a rota com opcional :path*)
+      // CREW
       {
         source: "/crew",
         destination: "https://arxum-crew.vercel.app/crew",
@@ -53,6 +51,16 @@ const nextConfig: NextConfig = {
       {
         source: "/poseidon/:path*",
         destination: "https://arxum-poseidon.vercel.app/poseidon/:path*",
+      },
+
+      // DESCOMPLICAÍ
+      {
+        source: "/descomplicai",
+        destination: "https://descomplicai-lovat.vercel.app/descomplicai",
+      },
+      {
+        source: "/descomplicai/:path*",
+        destination: "https://descomplicai-lovat.vercel.app/descomplicai/:path*",
       },
     ];
   },
