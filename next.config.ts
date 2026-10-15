@@ -66,11 +66,11 @@ const nextConfig: NextConfig = {
       // EDU
       {
         source: "/edu",
-        destination: "https://arxum-edu.vercel.app/arxum",
+        destination: "https://arxum-edu.vercel.app/edu",
       },
       {
         source: "/edu/:path*",
-        destination: "https://arxum-edu.vercel.app/:path*",
+        destination: "https://arxum-edu.vercel.app/edu/:path*",
       },
     ];
   },
