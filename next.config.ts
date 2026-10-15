@@ -62,6 +62,16 @@ const nextConfig: NextConfig = {
         source: "/descomplicai/:path*",
         destination: "https://descomplicai-lovat.vercel.app/descomplicai/:path*",
       },
+
+      // EDU
+      {
+        source: "/edu",
+        destination: "https://arxum-edu.vercel.app/arxum",
+      },
+      {
+        source: "/edu/:path*",
+        destination: "https://arxum-edu.vercel.app/:path*",
+      },
     ];
   },
 };
