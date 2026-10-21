@@ -72,6 +72,16 @@ const nextConfig: NextConfig = {
         source: "/edu/:path*",
         destination: "https://arxum-edu.vercel.app/edu/:path*",
       },
+
+      // NORMATO
+      {
+        source: "/normato",
+        destination: "https://event-engine-three.vercel.app/normato",
+      },
+      {
+        source: "/normato/:path*",
+        destination: "https://event-engine-three.vercel.app/normato/:path*",
+      },
     ];
   },
 };
