@@ -26,6 +26,19 @@ export function ProductMark({ product, size = 48 }: { product: Product; size?: n
     )
   }
 
+  if (product.slug === 'studio') {
+    // símbolo "Encaixe": três horários, o do meio encaixado
+    return (
+      <span className="flex items-center justify-center rounded-xl border" style={{ ...box, borderColor: `${product.color}40`, background: `${product.color}14` }} aria-hidden>
+        <svg width={size * 0.58} height={size * 0.58} viewBox="0 0 40 40" fill="none">
+          <rect x="5.5" y="5.5" width="22" height="7" rx="3.5" stroke={product.color} strokeWidth="3" />
+          <rect x="11" y="15" width="24.5" height="10" rx="5" fill={product.color} />
+          <rect x="5.5" y="27.5" width="22" height="7" rx="3.5" stroke={product.color} strokeWidth="3" />
+        </svg>
+      </span>
+    )
+  }
+
   if (product.slug === 'descomplicai') {
     return (
       <span className="flex items-center justify-center rounded-xl border border-[#8B6F5E]/40 bg-[#8B6F5E]/10" style={box} aria-hidden>
