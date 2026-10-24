@@ -4,12 +4,12 @@ export const alt = "ARXUM — Software para gestão, eventos, cultura e educaç�
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const COLORS = ["#d4af37", "#E8A020", "#8b5cf6", "#22d3ee", "#0d9488", "#10B981", "#ef4444"];
+const COLORS = ["#d4af37", "#E8A020", "#8b5cf6", "#22d3ee", "#0d9488", "#10B981", "#3b82f6", "#f97316", "#ef4444"];
 
 export default function Image() {
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 80, background: "radial-gradient(circle at 15% 0%, rgba(13,148,136,.45), transparent 50%), radial-gradient(circle at 90% 10%, rgba(124,58,237,.45), transparent 50%), #05070a", color: "#fff", fontFamily: "sans-serif" }}>
+      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 80, background: "radial-gradient(circle at 15% 0%, rgba(13,148,136,.45), transparent 50%), radial-gradient(circle at 90% 10%, rgba(139,92,246,.45), transparent 50%), #05070a", color: "#fff", fontFamily: "sans-serif" }}>
         <div style={{ fontSize: 40, fontWeight: 800, letterSpacing: -2 }}>ARXUM</div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 76, fontWeight: 800, letterSpacing: -3, lineHeight: 1.05 }}>Software para quem faz acontecer.</div>

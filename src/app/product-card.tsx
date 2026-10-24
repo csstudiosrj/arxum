@@ -25,7 +25,7 @@ export function ProductCard({ product, index }: { product: Product; index: numbe
       <div className="flex items-start justify-between gap-4">
         <ProductMark product={product} />
         <span className="rounded-full border border-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-white/50">
-          {product.soon ? 'Em breve' : product.segment}
+          {product.status ?? (product.soon ? 'Em breve' : product.segment)}
         </span>
       </div>
 
