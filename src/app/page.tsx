@@ -5,7 +5,7 @@ import { ProductMark } from './product-mark'
 const PILLARS = [
   {
     title: 'Um produto para cada operação',
-    text: 'Em vez de um sistema genérico que serve para tudo e para nada, cada produto ARXUM nasce para um nicho: festivais, equipes, editais, escolas, casamentos.',
+    text: 'Em vez de um sistema genérico que serve para tudo e para nada, cada produto ARXUM nasce para um nicho: festivais, equipes, editais, escolas, casamentos, salões e portarias.',
   },
   {
     title: 'Feito para a realidade brasileira',
@@ -55,7 +55,7 @@ export default function HomePage() {
 
       <header className="sticky top-0 z-40 border-b border-white/[0.06] bg-[#05070a]/70 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
-          <a href="/" className="font-display text-xl font-extrabold tracking-[-0.04em]" aria-label="ARXUM, início">ARXUM</a>
+          <a href="/" className="font-display text-xl font-extrabold tracking-[-0.04em]" aria-label="ARXUM, início">ARX<span className="text-[#1db954]">UM</span></a>
           <nav className="flex items-center gap-1 text-sm text-white/60">
             <a href="#produtos" className="hidden rounded-full px-4 py-2 transition hover:text-white sm:block">Produtos</a>
             <a href="#sobre" className="hidden rounded-full px-4 py-2 transition hover:text-white sm:block">Sobre</a>
@@ -74,7 +74,7 @@ export default function HomePage() {
             Software para quem faz <span className="arxum-shine">acontecer</span>.
           </h1>
           <p className="reveal mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/55 sm:text-lg" style={{ animationDelay: '160ms' }}>
-            Uma família de produtos para gestão, eventos, cultura e educação. Cada um especialista no seu nicho, todos feitos para a realidade brasileira.
+            Uma família de produtos para gestão, eventos, cultura, educação, beleza e segurança. Cada um especialista no seu nicho, todos feitos para a realidade brasileira.
           </p>
           <div className="reveal mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row" style={{ animationDelay: '240ms' }}>
             <a href="#produtos" className="group inline-flex h-12 items-center gap-2 rounded-full bg-white px-7 text-sm font-semibold text-black transition hover:bg-white/90">
@@ -144,7 +144,7 @@ export default function HomePage() {
       <footer className="border-t border-white/[0.06]">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_2fr]">
           <div>
-            <p className="font-display text-xl font-extrabold tracking-[-0.04em]">ARXUM</p>
+            <p className="font-display text-xl font-extrabold tracking-[-0.04em]">ARX<span className="text-[#1db954]">UM</span></p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/40">Soluções inteligentes para gestão, automação, eventos, cultura e educação.</p>
           </div>
           <nav aria-label="Produtos" className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm sm:grid-cols-3">

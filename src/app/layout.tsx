@@ -7,7 +7,7 @@ const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"] });
 
 const title = "ARXUM — Software para gestão, eventos, cultura e educação";
 const description =
-  "Ecossistema de produtos ARXUM: Fest, Crew, Normato, Poseidon, Edu, Descomplicaí e Suite. Ferramentas especialistas, feitas para a realidade brasileira.";
+  "Ecossistema de produtos ARXUM: Fest, Crew, Normato, Poseidon, Edu, Descomplicaí, Studio, Zelo e Suite. Ferramentas especialistas, feitas para a realidade brasileira.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.arxum.com.br"),

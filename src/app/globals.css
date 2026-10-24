@@ -50,7 +50,7 @@ body {
   will-change: transform;
 }
 .aurora-a { width: 620px; height: 620px; left: 8%; top: -260px; background: #0d9488; animation: drift 22s ease-in-out infinite alternate; }
-.aurora-b { width: 560px; height: 560px; right: 4%; top: -200px; background: #7c3aed; animation: drift 26s ease-in-out infinite alternate-reverse; }
+.aurora-b { width: 560px; height: 560px; right: 4%; top: -200px; background: #8b5cf6; animation: drift 26s ease-in-out infinite alternate-reverse; }
 .aurora-c { width: 520px; height: 420px; left: 38%; top: 120px; background: #d4af37; opacity: 0.16; animation: drift 30s ease-in-out infinite alternate; }
 
 @keyframes drift {
@@ -82,7 +82,7 @@ body {
 .cta-glow {
   background:
     radial-gradient(600px circle at 15% 0%, rgba(13, 148, 136, 0.28), transparent 60%),
-    radial-gradient(600px circle at 85% 100%, rgba(124, 58, 237, 0.28), transparent 60%),
+    radial-gradient(600px circle at 85% 100%, rgba(139, 92, 246, 0.28), transparent 60%),
     radial-gradient(500px circle at 50% 50%, rgba(212, 175, 55, 0.1), transparent 60%);
 }
 

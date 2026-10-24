@@ -13,6 +13,7 @@ export type Product = {
   features: string[]
   span: string
   soon?: boolean
+  status?: string
   sitemap?: boolean
 }
 
@@ -101,8 +102,22 @@ export const PRODUCTS: Product[] = [
     tagline: 'Agenda cheia, cadeira ocupada.',
     description: 'Agendamento online e gestão para salões, barbearias, esmalterias, estética, tatuagem e piercing: agenda, comandas, comissões, fila por QR code e filiais.',
     features: ['Agenda online', 'Comandas', 'Comissões', 'Filiais'],
-    span: 'lg:col-span-7',
+    span: 'lg:col-span-4',
     sitemap: true,
+  },
+  {
+    slug: 'zelo',
+    href: 'mailto:contato@arxum.com.br?subject=ARXUM%20Zelo',
+    prefix: 'ARXUM',
+    name: 'Zelo',
+    color: '#f97316',
+    segment: 'Portaria',
+    tagline: 'Quem entra e quem sai, você sabe. Com zelo.',
+    description: 'Portaria e controle de acessos para condomínios e empresas. Funciona sem internet, com QR de visita, encomendas com evidência e conformidade com a LGPD.',
+    features: ['Funciona offline', 'QR de visita', 'Encomendas', 'LGPD'],
+    span: 'lg:col-span-4',
+    soon: true,
+    status: 'Em desenvolvimento',
   },
   {
     slug: 'suite',
@@ -114,7 +129,7 @@ export const PRODUCTS: Product[] = [
     tagline: 'O ERP que fala com a família ARXUM.',
     description: 'ERP modular com financeiro, CRM e RH, integrado aos demais produtos do ecossistema.',
     features: ['Financeiro', 'CRM', 'RH'],
-    span: 'lg:col-span-5',
+    span: 'lg:col-span-4',
     soon: true,
   },
 ]

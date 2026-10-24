@@ -39,6 +39,21 @@ export function ProductMark({ product, size = 48 }: { product: Product; size?: n
     )
   }
 
+  if (product.slug === 'zelo') {
+    // símbolo do Zelo: escudo com portão
+    return (
+      <span className="flex items-center justify-center rounded-xl border" style={{ ...box, borderColor: `${product.color}40`, background: `${product.color}14` }} aria-hidden>
+        <svg width={size * 0.62} height={size * 0.62} viewBox="0 0 24 24" fill="none">
+          <path d="M12 2 L20 5 V11 C20 16.2 16.6 20.3 12 22 C7.4 20.3 4 16.2 4 11 V5 Z" fill={product.color} fillOpacity="0.12" stroke={product.color} strokeWidth="1.8" strokeLinejoin="round" />
+          <path d="M8.5 17 V10.5 a3.5 3.5 0 0 1 7 0 V17" stroke={product.color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          <line x1="8.5" y1="13.5" x2="15.5" y2="13.5" stroke={product.color} strokeWidth="1.6" strokeLinecap="round" />
+          <line x1="8.5" y1="17" x2="15.5" y2="17" stroke={product.color} strokeWidth="1.8" strokeLinecap="round" />
+          <circle cx="12" cy="7.2" r="1.1" fill={product.color} />
+        </svg>
+      </span>
+    )
+  }
+
   if (product.slug === 'descomplicai') {
     return (
       <span className="flex items-center justify-center rounded-xl border border-[#8B6F5E]/40 bg-[#8B6F5E]/10" style={box} aria-hidden>
