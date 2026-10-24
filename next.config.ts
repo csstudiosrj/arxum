@@ -73,6 +73,16 @@ const nextConfig: NextConfig = {
         destination: "https://arxum-edu.vercel.app/edu/:path*",
       },
 
+      // STUDIO
+      {
+        source: "/studio",
+        destination: "https://arxum-studio.vercel.app/studio",
+      },
+      {
+        source: "/studio/:path*",
+        destination: "https://arxum-studio.vercel.app/studio/:path*",
+      },
+
       // NORMATO
       {
         source: "/normato",
