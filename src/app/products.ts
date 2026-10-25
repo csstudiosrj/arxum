@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'zelo',
-    href: 'mailto:contato@arxum.com.br?subject=ARXUM%20Zelo',
+    href: '/zelo',
     prefix: 'ARXUM',
     name: 'Zelo',
     color: '#f97316',
@@ -116,8 +116,7 @@ export const PRODUCTS: Product[] = [
     description: 'Portaria e controle de acessos para condomínios e empresas. Funciona sem internet, com QR de visita, encomendas com evidência e conformidade com a LGPD.',
     features: ['Funciona offline', 'QR de visita', 'Encomendas', 'LGPD'],
     span: 'lg:col-span-4',
-    soon: true,
-    status: 'Em desenvolvimento',
+    sitemap: true,
   },
   {
     slug: 'suite',
