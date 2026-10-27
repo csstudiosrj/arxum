@@ -54,6 +54,54 @@ export function ProductMark({ product, size = 48 }: { product: Product; size?: n
     )
   }
 
+  // Símbolos de Fest, Crew, Edu e Suite (traço 1.8, preenchimento a 12%).
+  const c = product.color
+  const simbolos: Record<string, React.ReactNode> = {
+    // ingresso com estrela
+    fest: (
+      <>
+        <path d="M4 7.5a1.5 1.5 0 0 1 1.5-1.5h13a1.5 1.5 0 0 1 1.5 1.5v2a2.5 2.5 0 0 0 0 5v2a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 16.5v-2a2.5 2.5 0 0 0 0-5Z" fill={c} fillOpacity="0.12" stroke={c} strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="m12 9 .9 1.85 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2-1.45-1.4 2-.3Z" fill={c} />
+      </>
+    ),
+    // crachá de equipe
+    crew: (
+      <>
+        <rect x="4.5" y="5.5" width="15" height="16" rx="3" fill={c} fillOpacity="0.12" stroke={c} strokeWidth="1.8" />
+        <path d="M9.5 5.5V3.8a1.3 1.3 0 0 1 1.3-1.3h2.4a1.3 1.3 0 0 1 1.3 1.3v1.7" stroke={c} strokeWidth="1.8" strokeLinejoin="round" />
+        <circle cx="12" cy="11.4" r="2.3" stroke={c} strokeWidth="1.8" />
+        <path d="M8.3 18.2a3.7 3.7 0 0 1 7.4 0" stroke={c} strokeWidth="1.8" strokeLinecap="round" />
+      </>
+    ),
+    // livro aberto com o ponto da ideia
+    edu: (
+      <>
+        <path d="M12 7.2C10.2 5.7 7.3 5.2 3.5 5.6v12.6c3.8-.4 6.7.1 8.5 1.6 1.8-1.5 4.7-2 8.5-1.6V5.6c-3.8-.4-6.7.1-8.5 1.6Z" fill={c} fillOpacity="0.12" stroke={c} strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="M12 7.2v12.6" stroke={c} strokeWidth="1.8" />
+        <circle cx="12" cy="3" r="1.2" fill={c} />
+      </>
+    ),
+    // módulos: um ativo, três disponíveis
+    suite: (
+      <>
+        <rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2" fill={c} />
+        <rect x="13" y="3.5" width="7.5" height="7.5" rx="2" fill={c} fillOpacity="0.12" stroke={c} strokeWidth="1.8" />
+        <rect x="3.5" y="13" width="7.5" height="7.5" rx="2" fill={c} fillOpacity="0.12" stroke={c} strokeWidth="1.8" />
+        <rect x="13" y="13" width="7.5" height="7.5" rx="2" fill={c} fillOpacity="0.12" stroke={c} strokeWidth="1.8" />
+      </>
+    ),
+  }
+
+  if (simbolos[product.slug]) {
+    return (
+      <span className="flex items-center justify-center rounded-xl border" style={{ ...box, borderColor: `${c}40`, background: `${c}14` }} aria-hidden>
+        <svg width={size * 0.6} height={size * 0.6} viewBox="0 0 24 24" fill="none">
+          {simbolos[product.slug]}
+        </svg>
+      </span>
+    )
+  }
+
   if (product.slug === 'descomplicai') {
     return (
       <span className="flex items-center justify-center rounded-xl border border-[#8B6F5E]/40 bg-[#8B6F5E]/10" style={box} aria-hidden>
