@@ -93,6 +93,16 @@ const nextConfig: NextConfig = {
         destination: "https://arxum-zelo.vercel.app/zelo/:path*",
       },
 
+      // STAGE
+      {
+        source: "/stage",
+        destination: "https://arxum-stage.vercel.app/stage",
+      },
+      {
+        source: "/stage/:path*",
+        destination: "https://arxum-stage.vercel.app/stage/:path*",
+      },
+
       // NORMATO
       {
         source: "/normato",
