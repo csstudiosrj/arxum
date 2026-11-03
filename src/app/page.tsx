@@ -9,7 +9,7 @@ const PILLARS = [
   },
   {
     title: 'Feito para a realidade brasileira',
-    text: 'Lei Rouanet, normas do Corpo de Bombeiros, meia-entrada, Pix. As regras do Brasil estão no centro do produto, não em um ajuste de última hora.',
+    text: 'Editais, meia-entrada, Pix, nota fiscal. A realidade do Brasil está no centro de cada produto, não em um ajuste de última hora.',
   },
   {
     title: 'Uma família que conversa',
