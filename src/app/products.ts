@@ -39,7 +39,7 @@ export const PRODUCTS: Product[] = [
     segment: 'Eventos',
     tagline: 'Seu evento dimensionado em segundos.',
     description: '16 calculadoras para dimensionar brigada, saídas de emergência, sanitários, equipe médica e mais, com resultado na hora e relatório do evento.',
-    features: ['16 calculadoras', 'Normas por estado', 'Memória de cálculo'],
+    features: ['16 calculadoras', 'Resultado na hora', 'Relatório do evento'],
     span: 'lg:col-span-5',
     sitemap: true,
   },
