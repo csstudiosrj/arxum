@@ -133,5 +133,5 @@ export const PRODUCTS: Product[] = [
   },
 ]
 
-export const CONTACT_EMAIL = 'contato@arxum.com.br'
+export const CONTACT_EMAIL = 'sistemas@arxum.com.br'
 export const SITE_URL = 'https://www.arxum.com.br'
