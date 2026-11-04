@@ -155,7 +155,11 @@ export default function HomePage() {
         </div>
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 border-t border-white/[0.06] px-5 py-6 text-xs text-white/30 sm:flex-row sm:px-8">
           <p>© 2026 ARXUM Sistemas. Todos os direitos reservados.</p>
-          <a href={`mailto:${CONTACT_EMAIL}`} className="transition hover:text-white/60">{CONTACT_EMAIL}</a>
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <a href="/termos-de-uso" className="transition hover:text-white/60">Termos de Uso</a>
+            <a href="/privacidade" className="transition hover:text-white/60">Política de Privacidade</a>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="transition hover:text-white/60">{CONTACT_EMAIL}</a>
+          </div>
         </div>
       </footer>
     </div>
